@@ -1,0 +1,27 @@
+{
+  "title": "picture-positive",
+  "description": "A conventional résumé theme.",
+  "author": "elmø <edgar@cyb3r.dev> (https://github.com/lldb3)",
+  "engine": "handlebars",
+  "inherits": {
+    "txt": "basis",
+    "md": "basis"
+  },
+  "colors": {
+    "hyperlink": "C00000"
+  },
+  "fonts": {
+    "all": {
+      "default": [ "Open Sans", "sans-serif" ],
+      "heading1": [ "Open Sans", "Helvetica Neue", "Helvetica", "Lato", "sans-serif" ],
+      "heading2": [ "Helvetica Neue", "Helvetica", "Lato", "sans-serif" ]
+    },
+    "doc": {
+      "title": "Open Sans Light",
+      "heading1": "Open Sans Light",
+      "heading2": "Open Sans Light",
+      "heading3": "Open Sans Light",
+      "default": "Calibri"
+    }
+  }
+}
