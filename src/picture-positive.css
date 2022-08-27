@@ -1,18 +1,18 @@
 html, body, main, section, header, ul, p, h1, h2, h3 {
-  font-family: {{{fontList 'default'}}};
-  font-size: 14px;
-  line-height: 1.4;
-  margin: 0; padding: 0;
-  display: block;
+font-family: {{{fontList 'default'}}};
+font-size: 14px;
+line-height: 1.4;
+margin: 0; padding: 0;
+display: block;
 }
 
 ::selection {
   color: #fff;
-  background: #e48a8a; /* WebKit/Blink Browsers */
+  background:  #{{color 'selection'}}; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
   color: #fff;
-  background: #e48a8a; /* Gecko Browsers */
+  background: #{{color 'selection'}}; /* Gecko Browsers */
 }
 
 p::selection {
@@ -21,12 +21,12 @@ p::selection {
 
 a {
   color: #{{color 'hyperlink'}};
-  text-decoration: none;
+text-decoration: none;
 }
 
-a:visited {
-  color: #7B0796;
-}
+/*a:visited {*/
+/*  color: #{{color 'secondary'}};*/
+/*}*/
 
 a:hover {
   text-decoration: underline;
@@ -34,7 +34,7 @@ a:hover {
 
 h1 {
   text-transform: uppercase;
-  font-size:
+  float: left;
 }
 
 h2 {
@@ -59,12 +59,11 @@ h3 {
 
 table {
   width: 100%;
-  text-transform: uppercase;
 }
 
 td:first-child {
-  letter-spacing: 2px;
-  color: #bd5b5b;
+  letter-spacing: 0;
+  color: #{{color 'secondary'}};
   font-size: 20px;
 }
 
@@ -138,11 +137,12 @@ p, li {
   color: #717171;
   font-weight: 600;
   margin-top: 3px;
+
 }
 
 span.keywords {
   font-size: 12px;
-  color: #B16666;
+  color: #{{color 'primary'}};
 }
 
 thead {
@@ -163,13 +163,14 @@ h1, h2, .label {
   font-size: 2.5em;
   text-transform: uppercase;
   font-weight: 300;
-  font-family: {{{fontList 'heading1'}}}
+  color: #{{color 'selection'}}
+font-family: {{{fontList 'heading1'}}}
 }
 
 #contact {
- clear: both;
- float: right;
- margin-top: 2px;
+  clear: both;
+  float: right;
+  margin-top: 2px;
 }
 
 #contact span + span {
@@ -185,11 +186,12 @@ header > span.fa {
   font-size: 30px;
   /*transform: translateX(-110%); PDF no likey */
   margin-left: -50px;
-  color: #DADADA;
+  color: #{{color 'icons'}};
 }
 
 .label {
-  float: right;
+  font-size: 2.3em;
+  float: left;
   color: #DADADA;
 }
 
@@ -209,6 +211,14 @@ header > span.fa {
   text-align: center;
   margin: 30px;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 0;
   text-transform: uppercase;
+}
+
+#profile-img {
+  height: 7em;
+  width: 7em;
+  border-radius: 50%;
+  float: right;
+  margin: 10px
 }

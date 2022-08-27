@@ -8,8 +8,13 @@
     "md": "basis"
   },
   "colors": {
-    "hyperlink": "C00000"
+    "hyperlink": "B16666",
+    "primary": "004A63",
+    "secondary": "631900",
+    "selection": "4CB7DB",
+    "icons": "DADADA"
   },
+
   "fonts": {
     "all": {
       "default": [ "Open Sans", "sans-serif" ],
