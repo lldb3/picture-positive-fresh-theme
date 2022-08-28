@@ -9,10 +9,18 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     {{{styleSheet "picture-positive.css"}}}
 </head>
+
+{{! <!--
+Keep in mind that "r" contains the MARKDOWNIFIED version
+of the text in the user's FRESH or JRS resume because FRESH resume
+themes support Markdown natively. If you want the un-Markdownified
+text, you'd use RAW instead.
+--> }}
 <body>
+
 <main>
     <header>
-        <h1>{{{initialWords r.name }}} <span style="color: #006B8E;">{{{lastWord r.name }}}</span></h1>
+        <h1>{{{initialWords r.name }}} <span style="color: #{{ color 'primary'}};">{{{lastWord r.name }}}</span></h1>
         <img id="profile-img" src="{{ RAW.info.image }}" alt="profile picture">
 
         <span class="label">{{{ r.info.label }}}</span>
